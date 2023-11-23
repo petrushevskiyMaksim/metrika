@@ -220,7 +220,6 @@ body {
 	background-image: url('../images/example-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
 }
 
 .example__title {
