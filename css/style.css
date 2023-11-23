@@ -143,9 +143,10 @@ body {
 
 .about__btn {
 	display: inline-block;
+	text-align: center;
 	padding: 20px 40px;
 	border-radius: 5px;
-	text-align: center;
+	border: 1px solid #ad1818;
 	line-height: normal;
 	font-size: 20px;
 	letter-spacing: -0.6px;
@@ -154,6 +155,7 @@ body {
 }
 
 .about__btn:hover {
+	box-sizing: border-box;
 	background-color: #fff;
 	border: 1px solid #ad1818;
 	color: #ad1818;
@@ -277,6 +279,7 @@ body {
 .contacts__phone,
 .contacts__email {
 	display: block;
+	width: 475px;
 	font-family: Manrope;
 	font-size: 60px;
 	font-weight: 400;
