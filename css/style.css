@@ -43,7 +43,7 @@ body {
 
 .logo__link {
 	display: inline-block;
-	margin-right: 548px;
+	margin-right: 558px;
 }
 
 .logo__icon {
@@ -74,11 +74,22 @@ body {
 
 .nav__link--active {
 	opacity: 0.5;
-	text-decoration: underline;
+	position: relative;
 }
 
-.nav__link:not(:last-child) {
-	margin-right: 60px;
+.nav__link--active::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	width: 100%;
+	height: 1px;
+	background-color: #121212;
+}
+
+.nav__link:not(:first-child) {
+	margin-left: 56px;
 }
 
 .top {
@@ -105,7 +116,7 @@ body {
 .top__text {
 	position: absolute;
 	left: 40px;
-	bottom: 40px;
+	bottom: 38px;
 	width: 430px;
 	font-size: 20px;
 	line-height: normal;
@@ -126,8 +137,8 @@ body {
 	color: #121212;
 	font-size: 45px;
 	line-height: normal;
-	letter-spacing: -1.35px;
-	margin-bottom: 30px;
+	letter-spacing: -1.3px;
+	margin-bottom: 26px;
 }
 
 .about__btn {
@@ -140,6 +151,12 @@ body {
 	letter-spacing: -0.6px;
 	color: #fff;
 	background-color: #ad1818;
+}
+
+.about__btn:hover {
+	background-color: #fff;
+	border: 1px solid #ad1818;
+	color: #ad1818;
 }
 
 .projects {
@@ -159,7 +176,7 @@ body {
 }
 
 .projects__item-title {
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 
 .projects__link {
@@ -191,7 +208,7 @@ body {
 
 .services {
 	background-color: #121212;
-	padding-top: 150px;
+	padding-top: 151px;
 	padding-bottom: 150px;
 }
 
@@ -200,6 +217,7 @@ body {
 }
 
 .services__title {
+	margin-left: 2px;
 	margin-bottom: 34px;
 	color: #fff;
 	font-size: 18px;
@@ -213,12 +231,13 @@ body {
 }
 
 .services__item-title {
+	margin-left: 4px;
 	margin-bottom: 0;
 }
 
 .example {
 	position: relative;
-	height: 733px;
+	height: 717px;
 	margin-bottom: 50px;
 	background-image: url('../images/example-bg.jpg');
 	background-repeat: no-repeat;
@@ -232,20 +251,23 @@ body {
 }
 
 .contacts {
-	padding-top: 186px;
+	padding-top: 137px;
 	padding-bottom: 160px;
 }
 
 .contacts__title {
-	margin-bottom: 32px;
+	position: relative;
+	margin-bottom: 33px;
 }
 
 .contacts__title::before {
 	content: '';
 	display: block;
+	position: absolute;
 	width: 24px;
 	height: 24px;
-	margin-bottom: 12px;
+	bottom: 36px;
+	left: -5px;
 	background-image: url(/images/phone-iphone.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -255,7 +277,6 @@ body {
 .contacts__phone,
 .contacts__email {
 	display: block;
-	width: 473px;
 	font-family: Manrope;
 	font-size: 60px;
 	font-weight: 400;
@@ -266,8 +287,48 @@ body {
 
 .contacts__phone {
 	margin-bottom: 30px;
+	letter-spacing: -0.8px;
 }
 
 .contacts__email {
+	position: relative;
+	opacity: 0.5;
+}
+
+.contacts__email::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 406px;
+	height: 2px;
+	bottom: -10px;
+	left: 3px;
+	background-color: #121212;
+}
+
+.footer {
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background-color: #121212;
+}
+
+.footer__nav {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 85px;
+	width: 471px;
+}
+
+.footer-link--white {
+	color: #fff;
+}
+
+.footer__text {
+	text-align: center;
+	font-size: 20px;
+	line-height: normal;
+	letter-spacing: -0.6px;
+	color: #fff;
 	opacity: 0.5;
 }
