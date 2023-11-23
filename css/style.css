@@ -217,7 +217,7 @@ body {
 	position: relative;
 	height: 733px;
 	margin-bottom: 50px;
-	background-image: url(/images/example-bg.jpg);
+	background-image: url(../images/example-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
