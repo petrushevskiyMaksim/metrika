@@ -270,7 +270,7 @@ body {
 	height: 24px;
 	bottom: 36px;
 	left: -5px;
-	background-image: url('/images/phone-iphone.svg');
+	background-image: url('../images/phone-iphone.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
