@@ -2,7 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -26,7 +27,7 @@
 		<title>Метрика</title>
 	</head>
 	<body>
-		<div class="nav-section">
+		<div class="nav-section none">
 			<div class="container">
 				<div class="nav-section__inner">
 					<a class="logo__link" href="#">
@@ -75,11 +76,13 @@
 				<h2 class="projects__title title">проекты</h2>
 				<ul class="projects__items">
 					<li class="projects__item">
-						<img
-							class="projects__image"
-							src="images/image-01.jpg"
-							alt="project"
-						/>
+						<div class="projects__image-body">
+							<img
+								class="projects__image"
+								src="images/image-01.jpg"
+								alt="project"
+							/>
+						</div>
 						<h3 class="projects__item-title title-item">
 							ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
 						</h3>
@@ -159,14 +162,14 @@
 				</ul>
 			</div>
 		</section>
-		<section class="example">
+		<section class="example none">
 			<div class="container">
 				<h3 class="example__title title-item-white">
 					Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
 				</h3>
 			</div>
 		</section>
-		<section id="contacts" class="contacts">
+		<section id="contacts" class="contacts none">
 			<div class="container">
 				<h2 class="contacts__title title">Контакты</h2>
 				<a class="contacts__phone" href="tel:79358954535">+7 935 895-45-35</a>
@@ -176,7 +179,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer none">
 			<div class="container">
 				<nav class="footer__nav nav">
 					<a

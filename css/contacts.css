@@ -1,0 +1,47 @@
+.contacts {
+	padding-top: 137px;
+	padding-bottom: 160px;
+}
+
+.contacts__title {
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.contacts__title::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	bottom: 36px;
+	left: -5px;
+	background-image: url('../images/phone-iphone.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.contacts__phone,
+.contacts__email {
+	display: block;
+	font-family: Manrope;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -1.8px;
+	color: #121212;
+}
+
+.contacts__phone {
+	width: 480px;
+	margin-bottom: 30px;
+	letter-spacing: -0.8px;
+}
+
+.contacts__email {
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #121212;
+	opacity: 0.5;
+}

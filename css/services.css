@@ -1,0 +1,37 @@
+.services {
+	background-color: #121212;
+	padding-top: 151px;
+	padding-bottom: 150px;
+}
+
+.services__item:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.services__title {
+	margin-left: 2px;
+	margin-bottom: 34px;
+	color: #fff;
+	font-size: 18px;
+	line-height: normal;
+	letter-spacing: -0.54px;
+	text-transform: uppercase;
+}
+
+.services__image {
+	margin-bottom: 15px;
+}
+
+.services__item-title {
+	margin-left: 4px;
+	margin-bottom: 0;
+}
+
+.example {
+	position: relative;
+	height: 717px;
+	margin-bottom: 50px;
+	background-image: url('../images/example-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}

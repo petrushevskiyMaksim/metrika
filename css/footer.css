@@ -1,0 +1,25 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background-color: #121212;
+}
+
+.footer__nav {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 85px;
+	width: 471px;
+}
+
+.footer-link--white {
+	color: #fff;
+}
+
+.footer__text {
+	text-align: center;
+	font-size: 20px;
+	line-height: normal;
+	letter-spacing: -0.6px;
+	color: #fff;
+	opacity: 0.5;
+}
