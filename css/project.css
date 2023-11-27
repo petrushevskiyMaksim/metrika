@@ -81,16 +81,12 @@
 		line-height: normal;
 		letter-spacing: -0.66px;
 	}
-	.projects__image-body {
+	.projects__image {
 		height: 250px;
 	}
 	.projects__image img {
-		display: inline-block;
-		width: 100%;
 		height: 100%;
+		width: 100%;
 		object-fit: cover;
-		object-position: 50% 50%;
-	}
-	.projects__image img {
 	}
 }
