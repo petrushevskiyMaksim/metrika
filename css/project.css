@@ -14,9 +14,17 @@
 	margin-bottom: 90px;
 }
 
+picture {
+	display: inline-block;
+	width: 100%;
+}
+
+.projects__image-body {
+	margin-bottom: 15px;
+}
+
 .projects__image {
 	width: 100%;
-	margin-bottom: 15px;
 }
 
 .projects__item-title {
@@ -63,7 +71,7 @@
 	}
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 	.projects__title {
 		margin-bottom: 20px;
 		font-size: 14px;
