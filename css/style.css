@@ -288,12 +288,13 @@ body {
 }
 
 .contacts__phone {
+	width: 480px;
 	margin-bottom: 30px;
 	letter-spacing: -0.8px;
 }
 
 .contacts__email {
-	width: 412px;
+	display: inline-block;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #121212;
 	opacity: 0.5;
