@@ -81,12 +81,13 @@
 		line-height: normal;
 		letter-spacing: -0.66px;
 	}
-	.projects__image {
+	.projects__image-body {
+		width: 100%;
 		height: 250px;
 	}
 	.projects__image img {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
 	}
 }
