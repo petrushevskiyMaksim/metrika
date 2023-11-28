@@ -1,3 +1,12 @@
+.example {
+	position: relative;
+	height: 717px;
+	margin-bottom: 50px;
+	background-image: url('../images/example-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .example__title {
 	position: absolute;
 	width: 443px;

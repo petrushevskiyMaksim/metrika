@@ -5,6 +5,7 @@
 @import 'services.css';
 @import 'example.css';
 @import 'contacts.css';
+@import 'comments.css';
 @import 'footer.css';
 
 html {
@@ -54,18 +55,29 @@ body {
 }
 
 @media (max-width: 1199.98px) {
+	.container {
+		width: 100%;
+	}
 	.title-item {
 		font-size: 25px;
 		font-weight: 400;
 		line-height: normal;
 		letter-spacing: -0.75px;
 	}
-	.container {
-		width: 100%;
+	.title-item-white {
+		font-size: 25px;
+		letter-spacing: -0.75px;
 	}
 }
 
 @media (max-width: 768px) {
+	.container {
+		padding: 0 13px;
+	}
+	.title {
+		font-size: 14px;
+		letter-spacing: -0.42px;
+	}
 	.title-item {
 		font-size: 18px;
 		font-style: normal;
@@ -73,7 +85,8 @@ body {
 		line-height: normal;
 		letter-spacing: -0.54px;
 	}
-	.container {
-		padding: 0 13px;
+	.title-item-white {
+		font-size: 18px;
+		letter-spacing: -0.54px;
 	}
 }

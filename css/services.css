@@ -4,8 +4,17 @@
 	padding-bottom: 150px;
 }
 
-.services__item:not(:last-child) {
-	margin-bottom: 60px;
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 105px;
+	column-gap: 10px;
+	row-gap: 85px;
+}
+
+.services__item {
+	position: relative;
+	width: calc(50% - 5px);
 }
 
 .services__title {
@@ -19,7 +28,11 @@
 }
 
 .services__image {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+.services__image img {
+	object-fit: cover;
 }
 
 .services__item-title {
@@ -27,11 +40,94 @@
 	margin-bottom: 0;
 }
 
-.example {
-	position: relative;
-	height: 717px;
-	margin-bottom: 50px;
-	background-image: url('../images/example-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+.services__label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 36px;
+	left: 50px;
+	padding: 5px 20px;
+	color: #fff;
+	font-size: 22px;
+	line-height: normal;
+	letter-spacing: -0.66px;
+	border-radius: 5px;
+	background: #ad1818;
+}
+
+.services__btn {
+	display: block;
+	padding: 56px 0;
+	border: solid 1px #ad1818;
+	color: #fff;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.9px;
+	border-radius: 5px;
+	background: #ad1818;
+}
+
+.services__btn:hover {
+	border: solid 1px #ad1818;
+	color: #ad1818;
+	background: #fff;
+}
+
+@media (max-width: 1199.98px) {
+	.services {
+		padding-bottom: 120px;
+	}
+	.services__items {
+		margin-bottom: 80px;
+		row-gap: 80px;
+	}
+	.services__image {
+		margin-bottom: 15px;
+	}
+
+	.services__label {
+		top: 30px;
+		left: 30px;
+		padding: 5px 25px;
+		font-size: 20px;
+		letter-spacing: -0.6px;
+	}
+}
+
+@media (max-width: 768px) {
+	.services {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.services__items {
+		margin-bottom: 60px;
+		row-gap: 60px;
+	}
+	.services__title {
+		margin-bottom: 20px;
+	}
+	.services__image {
+		margin-bottom: 10px;
+	}
+	.services__label {
+		top: 23px;
+		left: 24px;
+		font-size: 14px;
+		letter-spacing: -0.42px;
+	}
+	.services__btn {
+		padding: 36px 0;
+		font-size: 22px;
+		letter-spacing: -0.66px;
+	}
+}
+
+@media (max-width: 550px) {
+	.services__item {
+		width: 100%;
+	}
 }
