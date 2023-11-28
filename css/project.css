@@ -15,7 +15,7 @@
 }
 
 picture {
-	display: inline-block;
+	display: block;
 	width: 100%;
 }
 
@@ -88,10 +88,6 @@ picture {
 		font-size: 22px;
 		line-height: normal;
 		letter-spacing: -0.66px;
-	}
-	.projects__image-body {
-		width: 100%;
-		height: 250px;
 	}
 	.projects__image img {
 		width: 100%;
