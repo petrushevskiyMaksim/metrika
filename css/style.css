@@ -54,7 +54,7 @@ body {
 	letter-spacing: -0.9px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1024.98px) {
 	.container {
 		width: 100%;
 	}
