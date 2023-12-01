@@ -41,7 +41,7 @@
 }
 
 .item {
-	min-height: 100%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -49,6 +49,7 @@
 
 .item--forest-landscape {
 	background-image: url('../images/gallery-slide-01.jpg');
+	height: 100%;
 }
 
 .item--lighthouse {
@@ -136,5 +137,54 @@
 	.item__wrapper {
 		padding-left: 35px;
 		top: 388px;
+	}
+
+	.item__title-slide {
+		max-width: 370px;
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery {
+		margin-bottom: 40px;
+	}
+
+	.galley__title-wrapper {
+		top: 60px;
+		padding-left: 0;
+	}
+
+	.galley__title {
+		font-size: 14px;
+		letter-spacing: -0.42px;
+	}
+
+	.gallery__slides {
+		height: 408px;
+	}
+
+	.item__wrapper {
+		padding-left: 0;
+		top: 296px;
+	}
+
+	.item__title-slide {
+		max-width: 269px;
+	}
+
+	.gallery__prev,
+	.gallery__next {
+		width: 30px;
+		height: 30px;
+	}
+
+	.gallery__controls-wrapper {
+		padding-left: 0;
+		left: 0;
+		bottom: 50%;
+		transform: translateY(50%);
+	}
+	.gallery__controls {
+		justify-content: space-between;
 	}
 }
