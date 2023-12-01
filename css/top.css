@@ -3,7 +3,7 @@
 }
 
 .top__title {
-	width: 956px;
+	max-width: 956px;
 	font-size: 60px;
 	line-height: 1;
 	letter-spacing: -1.8px;
@@ -24,19 +24,18 @@
 	position: absolute;
 	left: 40px;
 	bottom: 38px;
-	width: 430px;
+	max-width: 430px;
 	font-size: 20px;
 	line-height: normal;
 	letter-spacing: -0.6px;
 	color: #fff;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1023.98px) {
 	.top {
 		margin-bottom: 120px;
 	}
 	.top__title {
-		width: 800px;
 		font-size: 50px;
 		line-height: 1.2;
 		letter-spacing: -1.5px;
@@ -54,14 +53,12 @@
 		margin-bottom: 80px;
 	}
 	.top__title {
-		width: 335px;
 		margin-bottom: 25px;
 		font-size: 30px;
 		line-height: 1.05;
 		letter-spacing: -0.9px;
 	}
 	.top__text {
-		width: 310px;
 		bottom: 15px;
 		left: 15px;
 		font-size: 16px;

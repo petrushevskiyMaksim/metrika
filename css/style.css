@@ -3,9 +3,9 @@
 @import 'about.css';
 @import 'project.css';
 @import 'services.css';
-@import 'example.css';
-@import 'contacts.css';
 @import 'comments.css';
+@import 'gallery.css';
+@import 'contacts.css';
 @import 'footer.css';
 
 html {

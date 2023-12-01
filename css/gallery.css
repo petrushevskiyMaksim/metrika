@@ -1,0 +1,80 @@
+.gallery {
+	margin-bottom: 75px;
+}
+
+.galley__slider {
+	position: relative;
+}
+
+.galley__title-wrapper {
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	left: 0;
+	z-index: 1;
+}
+
+.galley__title {
+	color: #fff;
+}
+
+.gallery__slides {
+	height: 717px;
+	position: relative;
+}
+
+.gallery__slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.gallery__slide--active {
+	opacity: 1;
+}
+
+.item {
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.item--forest-landscape {
+	background-image: url('../images/gallery-slide-01.jpg');
+}
+
+.item--lighthouse {
+	background-image: url('../images/gallery-slide-02.jpg');
+}
+
+.item--private-house {
+	background-image: url('../images/gallery-slide-03.jpg');
+}
+
+.item--north-wind {
+	background-image: url('../images/gallery-slide-04.jpg');
+}
+
+.item-wrapper {
+	position: absolute;
+	bottom: 60px;
+}
+
+.item__title {
+	width: 440px;
+}
+
+.gallery__controls-wrapper {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 162px;
+}
+
+.gallery__controls {
+}

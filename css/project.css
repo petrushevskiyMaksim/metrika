@@ -58,7 +58,7 @@ picture {
 	background-color: #ad1818;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1023.98px) {
 	.projects__items {
 		margin-bottom: 100px;
 	}
