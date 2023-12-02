@@ -28,8 +28,8 @@
 }
 
 .contacts__email {
-	border-bottom: 2px solid #121212;
-	opacity: 0.5;
+	border-bottom: 2px solid rgba(18, 18, 18, 0.5);
+	color: rgba(18, 18, 18, 0.5);
 }
 
 .contacts__wrapper {

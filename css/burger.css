@@ -1,0 +1,79 @@
+.burger {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease;
+}
+
+.burger_open {
+	right: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.burger__content {
+	width: 80%;
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	background-color: #b0aeae;
+}
+
+@media (max-width: 1023.98px) {
+	.burger-btn--open {
+		background-image: url('../images/burger-icon-close.svg');
+		height: 30px;
+		width: 30px;
+	}
+	.burger__content {
+		padding: 80px 30px;
+		overflow-y: auto;
+	}
+	.burger__logo {
+		margin-bottom: 50px;
+	}
+	.burger__nav {
+		margin-bottom: 90px;
+	}
+	.burger__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.burger__link {
+		color: #000;
+		font-family: Manrope;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.75px;
+		text-transform: uppercase;
+	}
+	.burger-contact__title {
+		margin-bottom: 15px;
+		font-size: 16px;
+		letter-spacing: -0.48px;
+		color: #000;
+		opacity: 0.5;
+	}
+	.burger-contacts__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	.burger-contact__phone,
+	.burger-contact__email {
+		color: #121212;
+		font-family: Manrope;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.6px;
+	}
+}

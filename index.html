@@ -27,25 +27,69 @@
 		<title>Метрика</title>
 	</head>
 	<body>
-		<div class="nav-section">
+		<header class="nav-section">
 			<div class="container">
 				<div class="nav-section__inner">
-					<a class="logo__link" href="#">
+					<a class="nav-section__logo" href="#">
 						<img
 							class="logo__icon"
 							src="images/logo.svg"
 							alt="Логотип Метрика"
 						/>
 					</a>
-					<nav class="nav">
-						<a class="nav__link nav__link--active" href="#about">О НАС</a>
-						<a class="nav__link" href="#project">ПРОЕКТЫ</a>
-						<a class="nav__link" href="#services">УСЛУГИ</a>
-						<a class="nav__link" href="#contacts">КОНТАКТЫ</a>
+					<nav class="nav-section__nav">
+						<a class="nav-section__link nav-section__link--active" href="#about"
+							>О НАС</a
+						>
+						<a class="nav-section__link" href="#project">ПРОЕКТЫ</a>
+						<a class="nav-section__link" href="#services">УСЛУГИ</a>
+						<a class="nav-section__link" href="#contacts">КОНТАКТЫ</a>
 					</nav>
+					<div class="burger-btn js-burger-btn"></div>
+				</div>
+			</div>
+		</header>
+
+		<div class="burger js-burger">
+			<div class="burger__content js-burger__content">
+				<div class="burger__logo">
+					<a class="burger__logo-link" href="#"
+						><img
+							class="burger__logo-icon"
+							src="/images/logo-burger.svg"
+							alt="logo"
+					/></a>
+				</div>
+				<nav class="burger__nav">
+					<ul class="burger__list">
+						<li class="burger-item">
+							<a class="burger__link" href="#">о нас</a>
+						</li>
+						<li class="burger-item">
+							<a class="burger__link" href="#">проекты</a>
+						</li>
+						<li class="burger-item">
+							<a class="burger__link" href="#">услуги</a>
+						</li>
+						<li class="burger-item">
+							<a class="burger__link" href="#">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="burger-contacts">
+					<h4 class="burger-contact__title">для связи:</h4>
+					<div class="burger-contacts__inner">
+						<a href="tel:79358954535" class="burger-contact__phone"
+							>+7 935 895-45-35</a
+						>
+						<a href="mailto:hello@mail.com" class="burger-contact__email"
+							>hello@mail.com</a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<section class="top">
 			<div class="container">
 				<h1 class="top__title">
@@ -194,9 +238,31 @@
 						<p class="services__label">5% от стоимости</p>
 					</li>
 				</ul>
-				<a class="services__btn" href="#">Заказать услугу</a>
+				<a class="services__btn js-btn"> Заказать услугу </a>
 			</div>
 		</section>
+
+		<div class="popup js-popup">
+			<div class="popup__content js-popup__content">
+				<h4 class="popup__title">Заказать услугу</h4>
+				<p class="popup__text">
+					Заполните форму, мы свяжемся с вами в течение суток
+				</p>
+				<form class="popup__form" action="">
+					<input class="popup__input" type="text" placeholder="Имя" />
+					<input
+						class="popup__input"
+						type="email"
+						placeholder="Электронная почта"
+					/>
+					<input class="popup__input" type="tel" placeholder="Номер телефона" />
+					<button class="popup__button" type="submit">Отправить</button>
+				</form>
+
+				<div class="popup__close-btn js-popup__close-btn"></div>
+			</div>
+		</div>
+
 		<section class="comments">
 			<div class="container">
 				<h2 class="comments__title title">Отзывы</h2>
@@ -343,7 +409,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">
-					<nav class="footer__nav nav">
+					<nav class="footer__nav">
 						<a class="footer__nav-link nav__link--active" href="#about"
 							>О НАС</a
 						>
@@ -358,5 +424,7 @@
 
 		<script src="./js/scritp.js"></script>
 		<script src="./js/gallery.js"></script>
+		<script src="./js/popup.js"></script>
+		<script src="./js/burger.js"></script>
 	</body>
 </html>

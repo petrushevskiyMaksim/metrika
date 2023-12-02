@@ -1,8 +1,10 @@
 @import 'nav-section.css';
+@import 'burger.css';
 @import 'top.css';
 @import 'about.css';
 @import 'project.css';
 @import 'services.css';
+@import 'popup.css';
 @import 'comments.css';
 @import 'gallery.css';
 @import 'contacts.css';
@@ -12,10 +14,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-.none {
-	display: none;
-}
-
 img {
 	max-width: 100%;
 }
@@ -23,8 +21,13 @@ img {
 body {
 	font-family: Manrope, sans-serif;
 	font-weight: 400;
+	line-height: normal;
 	background-color: #fff;
 	color: #121212;
+}
+
+.body_fixed {
+	overflow: hidden;
 }
 
 .container {
@@ -54,7 +57,7 @@ body {
 	letter-spacing: -0.9px;
 }
 
-@media (max-width: 1024.98px) {
+@media (max-width: 1023.98px) {
 	.container {
 		width: 100%;
 	}

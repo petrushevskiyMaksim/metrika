@@ -11,13 +11,9 @@
 }
 
 .footer__nav {
-	margin-bottom: 87px;
-}
-
-.nav {
 	display: flex;
-	align-items: center;
 	gap: 53px;
+	margin-bottom: 87px;
 }
 
 .footer__nav-link {
