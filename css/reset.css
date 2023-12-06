@@ -44,6 +44,7 @@ input::-ms-clear {
 	display: none;
 }
 button {
+	font-family: inherit;
 	cursor: pointer;
 }
 button::-moz-focus-inner {

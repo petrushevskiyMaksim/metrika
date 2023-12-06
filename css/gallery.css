@@ -1,4 +1,5 @@
 .gallery {
+	padding-top: 75px;
 	margin-bottom: 75px;
 }
 
@@ -39,29 +40,17 @@
 .gallery__slide--active {
 	opacity: 1;
 }
-
-.item {
+.item__image {
+	width: 100%;
 	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	object-fit: cover;
 }
 
-.item--forest-landscape {
-	background-image: url('../images/gallery-slide-01.jpg');
-	height: 100%;
-}
-
-.item--lighthouse {
-	background-image: url('../images/gallery-slide-02.jpg');
-}
-
-.item--private-house {
-	background-image: url('../images/gallery-slide-03.jpg');
-}
-
-.item--north-wind {
-	background-image: url('../images/gallery-slide-04.jpg');
+.item__title-slide-wrapper {
+	position: absolute;
+	top: 575px;
+	left: 0;
+	width: 100%;
 }
 
 .item__wrapper {
@@ -110,8 +99,9 @@
 	background-image: url('../images/arrow-right.svg');
 }
 
-@media (max-width: 1024.98px) {
+@media (max-width: 961px) {
 	.gallery {
+		padding-top: 60px;
 		margin-bottom: 60px;
 	}
 
@@ -134,7 +124,7 @@
 		bottom: 152px;
 	}
 
-	.item__wrapper {
+	.item__title-slide-wrapper {
 		padding-left: 35px;
 		top: 388px;
 	}
@@ -146,6 +136,7 @@
 
 @media (max-width: 768px) {
 	.gallery {
+		padding-top: 40px;
 		margin-bottom: 40px;
 	}
 
@@ -163,7 +154,7 @@
 		height: 408px;
 	}
 
-	.item__wrapper {
+	.item__title-slide-wrapper {
 		padding-left: 0;
 		top: 296px;
 	}

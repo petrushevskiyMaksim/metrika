@@ -1,5 +1,6 @@
 .about {
-	margin-bottom: 150px;
+	padding-top: 75px;
+	margin-bottom: 75px;
 }
 
 .about__title {
@@ -35,9 +36,10 @@
 	color: #ad1818;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 961px) {
 	.about {
-		margin-bottom: 120px;
+		padding-top: 60px;
+		margin-bottom: 60px;
 	}
 	.about__text {
 		max-width: 690px;
@@ -48,7 +50,8 @@
 
 @media (max-width: 768px) {
 	.about {
-		margin-bottom: 80px;
+		padding-top: 40px;
+		margin-bottom: 40px;
 	}
 	.about__title {
 		margin-bottom: 20px;

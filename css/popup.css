@@ -34,12 +34,14 @@
 
 .popup__title {
 	margin-bottom: 5px;
+
 	font-size: 45px;
 	letter-spacing: -1.35px;
 }
 
 .popup__text {
 	margin-bottom: 60px;
+	text-align: center;
 	font-size: 18px;
 	letter-spacing: -0.54px;
 }
@@ -67,6 +69,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	margin-top: 30px;
 	padding: 20px 40px;
 	border-radius: 5px;
@@ -83,6 +86,7 @@
 	width: 50px;
 	height: 50px;
 	background-image: url('../images/popup-icon-close.svg');
+	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
@@ -115,5 +119,8 @@
 	}
 	.popup__button {
 		margin-top: 20px;
+	}
+	.popup__close-btn {
+		background-image: url('../images/popup-icon-close-mobile.svg');
 	}
 }

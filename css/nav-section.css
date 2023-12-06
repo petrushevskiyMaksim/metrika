@@ -11,9 +11,9 @@
 	flex: 0 0 128px;
 }
 
-.nav-section__nav {
+.nav-section__list {
 	display: flex;
-	gap: 60px;
+	column-gap: 60px;
 }
 
 .nav-section__link {
@@ -35,24 +35,8 @@
 	border-bottom: 1px solid #121212;
 }
 
-.burger-btn {
-	display: none;
-}
-
-@media (max-width: 1023.98px) {
+@media (max-width: 961px) {
 	.nav-section__nav {
 		display: none;
 	}
-	.burger-btn {
-		position: absolute;
-		right: 20px;
-		z-index: 2;
-		display: inline-block;
-		background-image: url('../images/burger-icon.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 50px;
-		height: 8px;
-	}
-	
 }

@@ -11,9 +11,12 @@
 }
 
 .footer__nav {
-	display: flex;
-	gap: 53px;
 	margin-bottom: 87px;
+}
+
+.footer__list {
+	display: flex;
+	column-gap: 53px;
 }
 
 .footer__nav-link {
@@ -40,7 +43,7 @@
 	opacity: 0.5;
 }
 
-@media (max-width: 1024.98px) {
+@media (max-width: 961px) {
 	.footer__nav-link {
 		font-size: 18px;
 		letter-spacing: -0.54px;
@@ -64,5 +67,13 @@
 	.footer__text {
 		font-size: 13px;
 		letter-spacing: -0.39px;
+	}
+}
+
+@media (max-width: 375px) {
+	.footer__list {
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 15px;
 	}
 }

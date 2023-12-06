@@ -38,15 +38,27 @@
 						/>
 					</a>
 					<nav class="nav-section__nav">
-						<a class="nav-section__link nav-section__link--active" href="#about"
-							>О НАС</a
-						>
-						<a class="nav-section__link" href="#project">ПРОЕКТЫ</a>
-						<a class="nav-section__link" href="#services">УСЛУГИ</a>
-						<a class="nav-section__link" href="#contacts">КОНТАКТЫ</a>
+						<ul class="nav-section__list">
+							<li class="nav-section__item">
+								<a
+									class="nav-section__link nav-section__link--active"
+									href="#about"
+									>О нас</a
+								>
+							</li>
+							<li class="nav-section__item">
+								<a class="nav-section__link" href="#project">ПРОЕКТЫ</a>
+							</li>
+							<li class="nav-section__item">
+								<a class="nav-section__link" href="#services">УСЛУГИ</a>
+							</li>
+							<li class="nav-section__item">
+								<a class="nav-section__link" href="#contacts">КОНТАКТЫ</a>
+							</li>
+						</ul>
 					</nav>
-					<div class="burger-btn js-burger-btn"></div>
 				</div>
+				<button class="burger-btn js-burger-btn"></button>
 			</div>
 		</header>
 
@@ -63,16 +75,16 @@
 				<nav class="burger__nav">
 					<ul class="burger__list">
 						<li class="burger-item">
-							<a class="burger__link" href="#">о нас</a>
+							<a class="burger__link" href="#about">о нас</a>
 						</li>
 						<li class="burger-item">
-							<a class="burger__link" href="#">проекты</a>
+							<a class="burger__link" href="#project">проекты</a>
 						</li>
 						<li class="burger-item">
-							<a class="burger__link" href="#">услуги</a>
+							<a class="burger__link" href="#services">услуги</a>
 						</li>
 						<li class="burger-item">
-							<a class="burger__link" href="#">контакты</a>
+							<a class="burger__link" href="#contacts">контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -103,6 +115,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="about" class="about">
 			<div class="container">
 				<h2 class="about__title title">О нас</h2>
@@ -115,6 +128,7 @@
 				<a class="about__btn" href="#">Посмотреть услуги</a>
 			</div>
 		</section>
+
 		<section id="project" class="projects">
 			<div class="container">
 				<h2 class="projects__title title">проекты</h2>
@@ -248,16 +262,27 @@
 				<p class="popup__text">
 					Заполните форму, мы свяжемся с вами в течение суток
 				</p>
-				<form class="popup__form" action="">
-					<input class="popup__input" type="text" placeholder="Имя" />
+				<form class="popup__form" autocomplete="on">
 					<input
 						class="popup__input"
+						name="name"
+						type="text"
+						placeholder="Имя"
+					/>
+					<input
+						class="popup__input"
+						name="email"
 						type="email"
 						placeholder="Электронная почта"
 					/>
-					<input class="popup__input" type="tel" placeholder="Номер телефона" />
-					<button class="popup__button" type="submit">Отправить</button>
+					<input
+						class="popup__input"
+						name="phone"
+						type="tel"
+						placeholder="Номер телефона"
+					/>
 				</form>
+				<button class="popup__button" type="submit">Отправить</button>
 
 				<div class="popup__close-btn js-popup__close-btn"></div>
 			</div>
@@ -325,6 +350,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="gallery">
 			<div class="galley__slider">
 				<div class="galley__title-wrapper">
@@ -332,52 +358,65 @@
 						<h4 class="galley__title">галерея проектов</h4>
 					</div>
 				</div>
-				<div class="gallery__slides">
-					<div class="gallery__slide gallery__slide--active">
-						<div class="item item--forest-landscape">
-							<div class="item__wrapper">
-								<div class="container">
-									<h3 class="item__title-slide title-item-white">
-										Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
-									</h3>
-								</div>
+				<ul class="gallery__slides">
+					<li class="gallery__slide gallery__slide--active">
+						<img
+							class="item__image"
+							src="../images/gallery-slide-01.jpg"
+							alt="forest-landscape"
+						/>
+						<div class="item__title-slide-wrapper">
+							<div class="container">
+								<h3 class="item__title-slide title-item-white">
+									Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
+								</h3>
 							</div>
 						</div>
-					</div>
-					<div class="gallery__slide">
-						<div class="item item--lighthouse">
-							<div class="item__wrapper">
-								<div class="container">
-									<h3 class="item__title-slide title-item-white">
-										Проект гостиной в ЖК Маяк
-									</h3>
-								</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							class="item__image"
+							src="../images/gallery-slide-02.jpg"
+							alt="lighthouse"
+						/>
+						<div class="item__title-slide-wrapper">
+							<div class="container">
+								<h3 class="item__title-slide title-item-white">
+									Проект гостиной в ЖК Маяк
+								</h3>
 							</div>
 						</div>
-					</div>
-					<div class="gallery__slide">
-						<div class="item item--private-house">
-							<div class="item__wrapper">
-								<div class="container">
-									<h3 class="item__title-slide title-item-white">
-										Визуализация кухни-гостиной в частном доме
-									</h3>
-								</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							class="item__image"
+							src="../images/gallery-slide-03.jpg"
+							alt="private-house"
+						/>
+						<div class="item__title-slide-wrapper">
+							<div class="container">
+								<h3 class="item__title-slide title-item-white">
+									Визуализация кухни-гостиной <br />
+									в частном доме
+								</h3>
 							</div>
 						</div>
-					</div>
-					<div class="gallery__slide">
-						<div class="item item--north-wind">
-							<div class="item__wrapper">
-								<div class="container">
-									<h3 class="item__title-slide title-item-white">
-										Проект кухни в скандинавском стиле для ЖК Северный Ветер
-									</h3>
-								</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							class="item__image"
+							src="../images/gallery-slide-04.jpg"
+							alt="north-wind"
+						/>
+						<div class="item__title-slide-wrapper">
+							<div class="container">
+								<h3 class="item__title-slide title-item-white">
+									Проект кухни в скандинавском стиле для ЖК Северный Ветер
+								</h3>
 							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
 				<div class="gallery__controls-wrapper">
 					<div class="container">
 						<div class="gallery__controls">
@@ -388,18 +427,22 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="contacts" class="contacts">
 			<div class="container">
 				<h2 class="contacts__title title">Контакты</h2>
 				<div class="contacts__inner">
-					<div class="contacts__wrapper">
+					<div class="contacts-wrapper">
 						<a class="contacts__phone" href="tel:79358954535"
 							>+7 935 895-45-35</a
 						>
 					</div>
-					<div class="contacts__wrapper">
-						<a class="contacts__email" href="mailto:hello@mail.com"
-							>hello@mail.com</a
+					<div class="contacts-wrapper">
+						<a
+							class="contacts__email"
+							href="https://t.me/makcKapirka"
+							target="_blank"
+							>makcKapirka</a
 						>
 					</div>
 				</div>
@@ -410,12 +453,22 @@
 			<div class="container">
 				<div class="footer__inner">
 					<nav class="footer__nav">
-						<a class="footer__nav-link nav__link--active" href="#about"
-							>О НАС</a
-						>
-						<a class="footer__nav-link" href="#project">ПРОЕКТЫ</a>
-						<a class="footer__nav-link" href="#services">УСЛУГИ</a>
-						<a class="footer__nav-link" href="#contacts">КОНТАКТЫ</a>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__nav-link nav__link--active" href="#about"
+									>О НАС</a
+								>
+							</li>
+							<li class="footer__item">
+								<a class="footer__nav-link" href="#project">ПРОЕКТЫ</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__nav-link" href="#services">УСЛУГИ</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__nav-link" href="#contacts">КОНТАКТЫ</a>
+							</li>
+						</ul>
 					</nav>
 					<p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
 				</div>

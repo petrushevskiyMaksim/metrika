@@ -1,4 +1,5 @@
 .projects {
+	padding-top: 75px;
 	margin-bottom: 150px;
 }
 
@@ -58,7 +59,11 @@ picture {
 	background-color: #ad1818;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 961px) {
+	.projects {
+		padding-top: 60px;
+		margin-bottom: 120px;
+	}
 	.projects__items {
 		margin-bottom: 100px;
 	}
@@ -72,6 +77,10 @@ picture {
 }
 
 @media (max-width: 768px) {
+	.projects {
+		padding-top: 40px;
+		margin-bottom: 80px;
+	}
 	.projects__title {
 		margin-bottom: 20px;
 		font-size: 14px;

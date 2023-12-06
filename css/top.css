@@ -1,5 +1,5 @@
 .top {
-	margin-bottom: 150px;
+	margin-bottom: 75px;
 }
 
 .top__title {
@@ -31,9 +31,9 @@
 	color: #fff;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 961px) {
 	.top {
-		margin-bottom: 120px;
+		margin-bottom: 60px;
 	}
 	.top__title {
 		font-size: 50px;
@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
 	.top {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.top__title {
 		margin-bottom: 25px;

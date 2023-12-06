@@ -25,7 +25,20 @@
 	background-color: #b0aeae;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 961px) {
+	.burger-btn {
+		position: absolute;
+		top: 33px;
+		right: 15px;
+		z-index: 2;
+		display: inline-block;
+		background-image: url('../images/burger-icon.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: transparent;
+		width: 50px;
+		height: 8px;
+	}
 	.burger-btn--open {
 		background-image: url('../images/burger-icon-close.svg');
 		height: 30px;
@@ -34,6 +47,7 @@
 	.burger__content {
 		padding: 80px 30px;
 		overflow-y: auto;
+		
 	}
 	.burger__logo {
 		margin-bottom: 50px;
