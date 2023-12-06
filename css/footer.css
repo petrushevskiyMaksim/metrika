@@ -16,11 +16,12 @@
 
 .footer__list {
 	display: flex;
-	column-gap: 53px;
+	column-gap: 43px;
 }
 
 .footer__nav-link {
 	display: inline-block;
+	padding: 5px 5px;
 	font-family: Manrope;
 	color: #fff;
 	font-size: 18px;
@@ -33,6 +34,7 @@
 .footer__nav-link:hover {
 	color: #ad1818;
 	font-weight: 700;
+	transition: color 0.5s ease;
 }
 
 .footer__text {

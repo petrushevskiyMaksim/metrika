@@ -57,6 +57,11 @@ body {
 	letter-spacing: -0.9px;
 }
 
+.link--active {
+	opacity: 0.6;
+	border-bottom: 1px solid #121212;
+}
+
 @media (max-width: 961px) {
 	.container {
 		width: 100%;
