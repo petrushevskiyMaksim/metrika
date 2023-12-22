@@ -36,6 +36,7 @@
 		margin-bottom: 60px;
 	}
 	.top__title {
+		max-width: 800px;
 		font-size: 50px;
 		line-height: 1.2;
 		letter-spacing: -1.5px;

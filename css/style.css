@@ -1,4 +1,4 @@
-@import 'nav-section.css';
+@import 'header.css';
 @import 'burger.css';
 @import 'top.css';
 @import 'about.css';
@@ -63,9 +63,6 @@ body {
 }
 
 @media (max-width: 961px) {
-	.container {
-		width: 100%;
-	}
 	.title-item {
 		font-size: 25px;
 		font-weight: 400;
@@ -79,9 +76,6 @@ body {
 }
 
 @media (max-width: 768px) {
-	.container {
-		padding: 0 13px;
-	}
 	.title {
 		font-size: 14px;
 		letter-spacing: -0.42px;
